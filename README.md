@@ -15,7 +15,11 @@ systems-thinking-code/
 │       ├── lab1_queue_worker.py   # Queue + Worker Discovery Lab
 │       └── lab2_time_worker.py    # Time + Worker Discovery Lab
 │
-└── examples/                      # Coming soon
+└── challenges/
+    └── course1/
+        ├── part1-mvp-foundation.md    # ChefConnect MVP Design
+        ├── part2-viral-growth.md      # Scaling & Growth Challenge
+        └── part3-live-streaming.md    # Live Streaming Extension
 ```
 
 ## The 7 Building Blocks
@@ -53,6 +57,21 @@ python labs/course1/lab1_queue_worker.py
 ```bash
 python labs/course1/lab2_time_worker.py
 ```
+
+## Design Challenge Templates
+
+The `challenges/` folder contains Technical Design Document templates for the system design challenges:
+
+| Part | Challenge | Description |
+|------|-----------|-------------|
+| 1 | **MVP Foundation** | Design ChefConnect's initial architecture with 5 core requirements |
+| 2 | **Viral Growth** | Scale the system to handle explosive user growth |
+| 3 | **Live Streaming** | Add real-time cooking session capabilities |
+
+### How to Use
+1. Download the template for the challenge part you're working on
+2. Fill in your architecture decisions using building block terminology
+3. Submit via the course website for AI-powered feedback
 
 ## Course Information
 
