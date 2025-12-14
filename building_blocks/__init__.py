@@ -1,3 +1,12 @@
+# =============================================================================
+# Systems Thinking in the AI Era
+# https://systemthinkinglab.ai
+#
+# This code is part of the "Systems Thinking in the AI Era" course series.
+# For more information, educational content, and courses, visit:
+# https://systemthinkinglab.ai
+# =============================================================================
+
 # Building Blocks Module
 # Systems Thinking in the AI Era
 
