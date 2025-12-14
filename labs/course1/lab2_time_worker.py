@@ -31,12 +31,27 @@ Usage:
 import time
 import random
 import sys
+import os
 import threading
 import argparse
 from datetime import datetime
 from typing import Optional, Dict, List
-from building_blocks import Worker
-from external_entities import Time
+
+# Add the repository root to the Python path for imports
+# This allows running from: python labs/course1/lab2_time_worker.py
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.dirname(os.path.dirname(script_dir))
+sys.path.insert(0, repo_root)
+
+try:
+    from building_blocks.building_blocks import Worker
+    from building_blocks.external_entities import Time
+except ImportError:
+    print("Error: Could not import building_blocks module.")
+    print("Please run this script from the repository root:")
+    print("  cd system-thinking-in-the-ai-era")
+    print("  python labs/course1/lab2_time_worker.py")
+    sys.exit(1)
 
 
 class TimeWorkerLabExperience:

@@ -20,17 +20,26 @@ Developing system thinking skills that complement AI rather than compete with it
 
 import time
 import sys
+import os
 import random
 import argparse
 import threading
 from typing import Optional
 
+# Add the repository root to the Python path for imports
+# This allows running from: python labs/course1/lab1_queue_worker.py
+script_dir = os.path.dirname(os.path.abspath(__file__))
+repo_root = os.path.dirname(os.path.dirname(script_dir))
+sys.path.insert(0, repo_root)
+
 # Import our building blocks
 try:
-    from building_blocks import Service, Queue, Worker
+    from building_blocks.building_blocks import Service, Queue, Worker
 except ImportError:
     print("Error: Could not import building_blocks module.")
-    print("Please ensure building_blocks.py is in the same directory as this script.")
+    print("Please run this script from the repository root:")
+    print("  cd system-thinking-in-the-ai-era")
+    print("  python labs/course1/lab1_queue_worker.py")
     sys.exit(1)
 
 

@@ -16,8 +16,8 @@ from .building_blocks import (
     Queue,
     KeyValueStore,
     FileStore,
-    RelationalDatabase,
-    VectorDatabase
+    RelationalDB,
+    VectorDB
 )
 
 from .external_entities import (
@@ -33,8 +33,8 @@ __all__ = [
     'Queue',
     'KeyValueStore',
     'FileStore',
-    'RelationalDatabase',
-    'VectorDatabase',
+    'RelationalDB',
+    'VectorDB',
     # External Entities
     'User',
     'ExternalService',
